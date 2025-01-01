@@ -4,5 +4,3 @@
 <a href="https://github.com/anuraghazra/github-readme-stats">
   <img height=200 align="center" src="https://github-readme-stats-rho-seven-74.vercel.app/api/top-langs/?username=ctf05&layout=compact&theme=gruvbox&count_private=true&langs_count=8&card_width=320" />
 </a>
-
-![Lines of Code](https://api.githubstats.lib.id/loc/?username=ctf05)
