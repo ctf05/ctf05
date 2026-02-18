@@ -309,7 +309,7 @@ def generate_svg(stats: dict[str, dict]) -> str:
 
     # Build stat rows
     rows_svg = ""
-    y = 65
+    y = 80
     for label in TIME_FRAMES:
         s = stats.get(label, {"additions": 0, "deletions": 0, "total": 0})
         rows_svg += f'  <text x="25" y="{y}" fill="{label_color}" font-size="14" font-family="\'Segoe UI\', Ubuntu, \'Helvetica Neue\', Sans-Serif" font-weight="400">{label}</text>\n'
@@ -335,7 +335,8 @@ def generate_svg(stats: dict[str, dict]) -> str:
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="495" height="{card_height}" viewBox="0 0 495 {card_height}">
   <rect x="0.5" y="0.5" rx="4.5" width="494" height="{card_height - 1}" fill="{bg}" stroke="{border}"/>
 {icon_svg}
-  <text x="58" y="33" fill="{title_color}" font-size="18" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif" font-weight="600">Lines of Code Edited (Personal Repos, Excludes my Job)</text>
+  <text x="58" y="33" fill="{title_color}" font-size="18" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif" font-weight="600">Lines of Code Edited</text>
+  <text x="58" y="53" fill="{muted_color}" font-size="16" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif" font-weight="400">(Personal Repos, Excludes my Job)</text>
 {rows_svg}</svg>
 """
     return svg
