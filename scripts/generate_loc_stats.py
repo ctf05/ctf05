@@ -31,7 +31,7 @@ CACHE_PATH = REPO_ROOT / "data" / "loc-cache.json"
 SVG_PATH = REPO_ROOT / "loc-stats.svg"
 
 API_BASE = "https://api.github.com"
-RETRY_DELAYS = [5, 10, 20]  # seconds – for 202 responses
+PASS2_WAIT = 30  # seconds to wait between pass 1 and pass 2 for 202 repos
 RATE_LIMIT_FLOOR = 100  # pause if remaining drops below this
 
 TIME_FRAMES = {
@@ -107,53 +107,40 @@ def list_user_repos(token: str, token_label: str) -> list[dict]:
 def get_contributor_stats(
     token: str, repo_full_name: str, etag: str | None = None
 ) -> tuple[list[dict] | None, str | None, int]:
-    """Fetch weekly contributor stats for a repo.
+    """Fetch weekly contributor stats for a repo (single attempt).
 
     Returns (weeks_for_user, new_etag, http_status).
-    - weeks_for_user is None on 304 (cache hit) or if user not found.
-    - http_status is the final status code (200, 304, etc.).
+    - weeks_for_user is None on 304 (cache hit), 202 (computing), or if user not found.
+    - http_status is the final status code (200, 202, 304, etc.).
     """
     url = f"{API_BASE}/repos/{repo_full_name}/stats/contributors"
     headers = _headers(token)
     if etag:
         headers["If-None-Match"] = etag
 
-    for attempt, delay in enumerate(RETRY_DELAYS):
-        resp = requests.get(url, headers=headers, timeout=30)
-        status = resp.status_code
-        new_etag = resp.headers.get("ETag")
-        remaining = resp.headers.get("X-RateLimit-Remaining", "?")
+    resp = requests.get(url, headers=headers, timeout=30)
+    status = resp.status_code
+    new_etag = resp.headers.get("ETag")
 
-        if status == 304:
-            log.info("    → 304 (cache hit) — rate limit remaining: %s", remaining)
-            return None, etag, 304
+    if status == 304:
+        return None, etag, 304
 
-        if status == 202:
-            log.info(
-                "    → 202 (computing, attempt %d/%d) — retrying in %ds",
-                attempt + 1,
-                len(RETRY_DELAYS),
-                delay,
-            )
-            time.sleep(delay)
-            continue
+    if status == 202:
+        return None, new_etag, 202
 
-        if status == 200:
-            log.info("    → 200 — rate limit remaining: %s", remaining)
-            _check_rate_limit(resp, repo_full_name)
-            contributors = resp.json()
-            for contrib in contributors:
-                if contrib.get("author", {}).get("login", "").lower() == GITHUB_USER.lower():
-                    return contrib.get("weeks", []), new_etag, 200
-            # User has no commits in this repo
-            return [], new_etag, 200
+    if status == 200:
+        _check_rate_limit(resp, repo_full_name)
+        contributors = resp.json()
+        for contrib in contributors:
+            if contrib.get("author", {}).get("login", "").lower() == GITHUB_USER.lower():
+                return contrib.get("weeks", []), new_etag, 200
+        # User has no commits in this repo
+        return [], new_etag, 200
 
-        # Other error
-        log.warning("    → %d — %s", status, resp.text[:200])
-        resp.raise_for_status()
-
-    log.warning("    → gave up after %d retries (202)", len(RETRY_DELAYS))
-    return None, etag, 202
+    # Other error
+    log.warning("    → %d — %s", status, resp.text[:200])
+    resp.raise_for_status()
+    return None, new_etag, status
 
 
 def clone_and_count(
@@ -162,11 +149,13 @@ def clone_and_count(
     """Fallback: blobless clone + git log to count additions/deletions.
 
     Returns a list of synthetic week entries [{w, a, d}] grouped by week.
+    Note: log messages here must NOT include repo_full_name (may be private).
+    The caller is responsible for logging the display name.
     """
     clone_url = f"https://x-access-token:{token}@github.com/{repo_full_name}.git"
     tmpdir = tempfile.mkdtemp(prefix="loc-stats-")
     try:
-        log.info("    Cloning %s (blobless)...", repo_full_name)
+        log.info("    Cloning (blobless)...")
         subprocess.run(
             ["git", "clone", "--filter=blob:none", "--bare", clone_url, tmpdir + "/repo"],
             capture_output=True,
@@ -176,7 +165,7 @@ def clone_and_count(
         )
         repo_path = tmpdir + "/repo"
 
-        log.info("    Running git log --author=%s --numstat ...", GITHUB_USER)
+        log.info("    Running git log --numstat ...")
         result = subprocess.run(
             [
                 "git", "-C", repo_path, "log",
@@ -226,12 +215,13 @@ def clone_and_count(
         return weeks
 
     except subprocess.TimeoutExpired:
-        log.warning("    Clone/log timed out for %s", repo_full_name)
+        log.warning("    Clone/log timed out")
         return []
     except subprocess.CalledProcessError as e:
         stderr = (e.stderr[:200] if e.stderr else str(e))
         stderr = stderr.replace(token, "***")
-        log.warning("    Clone/log failed for %s: %s", repo_full_name, stderr)
+        stderr = stderr.replace(repo_full_name, "***")
+        log.warning("    Clone/log failed: %s", stderr)
         return []
     finally:
         shutil.rmtree(tmpdir, ignore_errors=True)
@@ -356,6 +346,76 @@ def generate_svg(stats: dict[str, dict]) -> str:
 # ---------------------------------------------------------------------------
 
 
+def _display_name(repo: dict, private_counter: dict) -> str:
+    """Return a log-safe display name. Redacts private repo names."""
+    if repo.get("private"):
+        private_counter["n"] += 1
+        return f"[private-{private_counter['n']}]"
+    return repo["full_name"]
+
+
+def _process_repo(
+    full_name: str,
+    repo: dict,
+    token: str,
+    cache: dict,
+    display: str,
+    weeks: list[dict] | None,
+    new_etag: str | None,
+    status: int,
+) -> None:
+    """Process a single repo's stats result and update the cache."""
+    cached_repo = cache["repos"].get(full_name, {})
+
+    if status == 304:
+        a = sum(w.get("a", 0) for w in cached_repo.get("weeks", {}).values())
+        d = sum(w.get("d", 0) for w in cached_repo.get("weeks", {}).values())
+        log.info("  %s — 304 (cache hit) — +%s / -%s", display, f"{a:,}", f"{d:,}")
+        return
+
+    if weeks is not None and len(weeks) > 0:
+        total_a = sum(w.get("a", 0) for w in weeks)
+        total_d = sum(w.get("d", 0) for w in weeks)
+
+        if total_a == 0 and total_d == 0:
+            log.info("  %s — all zeroes, 10k+ fallback → cloning", display)
+            weeks = clone_and_count(token, full_name)
+        else:
+            log.info("  %s — 200 — +%s / -%s", display, f"{total_a:,}", f"{total_d:,}")
+
+    elif weeks is not None and len(weeks) == 0:
+        log.info("  %s — no commits by %s", display, GITHUB_USER)
+        cache["repos"][full_name] = {
+            "etag": new_etag,
+            "is_private": repo.get("private", False),
+            "weeks": {},
+            "last_fetched": datetime.now(timezone.utc).isoformat(),
+        }
+        return
+
+    else:
+        # 202 — try clone fallback if no cache
+        if cached_repo.get("weeks"):
+            log.info("  %s — 202, using cached data", display)
+            return
+        log.info("  %s — 202, falling back to clone", display)
+        weeks = clone_and_count(token, full_name)
+
+    # Update cache
+    if weeks is not None:
+        weeks_dict = {}
+        for w in weeks:
+            ts = str(w.get("w", 0))
+            weeks_dict[ts] = {"a": w.get("a", 0), "d": w.get("d", 0)}
+
+        cache["repos"][full_name] = {
+            "etag": new_etag,
+            "is_private": repo.get("private", False),
+            "weeks": weeks_dict,
+            "last_fetched": datetime.now(timezone.utc).isoformat(),
+        }
+
+
 def main() -> None:
     log.info("=" * 60)
     log.info("Lines of Code Stats Generator")
@@ -399,65 +459,46 @@ def main() -> None:
     log.info("Total unique repos: %d", len(all_repos))
     log.info("-" * 60)
 
-    # Process each repo
-    for idx, (full_name, (repo, token, token_label)) in enumerate(sorted(all_repos.items()), 1):
-        log.info("")
-        log.info("[REPO %d/%d] %s", idx, len(all_repos), full_name)
+    # Private repo name counter for redaction
+    private_counter = {"n": 0}
 
+    # -----------------------------------------------------------------------
+    # Pass 1: Request stats for all repos. Collect 200/304 immediately,
+    #         queue 202s for a second pass.
+    # -----------------------------------------------------------------------
+    log.info("")
+    log.info("[PASS 1] Requesting stats for all repos...")
+    pending_202: list[tuple[str, dict, str, str, str]] = []  # (full_name, repo, token, display, etag)
+    total = len(all_repos)
+
+    for idx, (full_name, (repo, token, token_label)) in enumerate(sorted(all_repos.items()), 1):
+        display = _display_name(repo, private_counter)
         cached_repo = cache["repos"].get(full_name, {})
         etag = cached_repo.get("etag")
 
-        # Try API first
-        log.info("  GET /repos/%s/stats/contributors", full_name)
         weeks, new_etag, status = get_contributor_stats(token, full_name, etag)
 
-        if status == 304:
-            # Cache hit — use existing data
-            a = sum(w.get("a", 0) for w in cached_repo.get("weeks", {}).values())
-            d = sum(w.get("d", 0) for w in cached_repo.get("weeks", {}).values())
-            log.info("  Using cached data — +%s / -%s", f"{a:,}", f"{d:,}")
-            continue
-
-        if weeks is not None and len(weeks) > 0:
-            # Check for all-zeroes (10k+ commit issue)
-            total_a = sum(w.get("a", 0) for w in weeks)
-            total_d = sum(w.get("d", 0) for w in weeks)
-
-            if total_a == 0 and total_d == 0:
-                log.info("  API returned all zeroes — possible 10k+ commit repo, falling back to clone")
-                weeks = clone_and_count(token, full_name)
-            else:
-                log.info("  +%s / -%s", f"{total_a:,}", f"{total_d:,}")
-        elif weeks is not None and len(weeks) == 0:
-            log.info("  No commits by %s in this repo", GITHUB_USER)
-            cache["repos"][full_name] = {
-                "etag": new_etag,
-                "is_private": repo.get("private", False),
-                "weeks": {},
-                "last_fetched": datetime.now(timezone.utc).isoformat(),
-            }
-            continue
+        if status == 202:
+            log.info("  [%d/%d] %s — 202 (queued for pass 2)", idx, total, display)
+            pending_202.append((full_name, repo, token, display, new_etag))
         else:
-            # 202 timeout or other issue — try clone fallback if no cache
-            if cached_repo.get("weeks"):
-                log.info("  API unavailable, using cached data")
-                continue
-            log.info("  API unavailable, falling back to clone")
-            weeks = clone_and_count(token, full_name)
+            _process_repo(full_name, repo, token, cache, f"[{idx}/{total}] {display}", weeks, new_etag, status)
 
-        # Update cache
-        if weeks is not None:
-            weeks_dict = {}
-            for w in weeks:
-                ts = str(w.get("w", 0))
-                weeks_dict[ts] = {"a": w.get("a", 0), "d": w.get("d", 0)}
+    # -----------------------------------------------------------------------
+    # Pass 2: Retry 202 repos after waiting for GitHub to compute stats.
+    # -----------------------------------------------------------------------
+    if pending_202:
+        log.info("")
+        log.info("[PASS 2] Waiting %ds for GitHub to compute stats for %d repos...", PASS2_WAIT, len(pending_202))
+        time.sleep(PASS2_WAIT)
 
-            cache["repos"][full_name] = {
-                "etag": new_etag,
-                "is_private": repo.get("private", False),
-                "weeks": weeks_dict,
-                "last_fetched": datetime.now(timezone.utc).isoformat(),
-            }
+        for idx, (full_name, repo, token, display, old_etag) in enumerate(pending_202, 1):
+            weeks, new_etag, status = get_contributor_stats(token, full_name)
+
+            if status == 202:
+                log.info("  [%d/%d] %s — still 202, falling back to clone", idx, len(pending_202), display)
+                # Fall through to clone via _process_repo
+            _process_repo(full_name, repo, token, cache, f"[{idx}/{len(pending_202)}] {display}", weeks, new_etag, status)
 
     # Compute aggregated stats
     log.info("")
