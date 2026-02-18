@@ -31,7 +31,7 @@ CACHE_PATH = REPO_ROOT / "data" / "loc-cache.json"
 SVG_PATH = REPO_ROOT / "loc-stats.svg"
 
 API_BASE = "https://api.github.com"
-PASS2_WAIT = 30  # seconds to wait between pass 1 and pass 2 for 202 repos
+PASS2_WAIT = 10  # seconds to wait between pass 1 and pass 2 for 202 repos
 RATE_LIMIT_FLOOR = 100  # pause if remaining drops below this
 
 TIME_FRAMES = {
@@ -335,7 +335,7 @@ def generate_svg(stats: dict[str, dict]) -> str:
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="495" height="{card_height}" viewBox="0 0 495 {card_height}">
   <rect x="0.5" y="0.5" rx="4.5" width="494" height="{card_height - 1}" fill="{bg}" stroke="{border}"/>
 {icon_svg}
-  <text x="58" y="33" fill="{title_color}" font-size="18" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif" font-weight="600">Lines of Code Edited</text>
+  <text x="58" y="33" fill="{title_color}" font-size="18" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif" font-weight="600">Lines of Code Edited (Personal Repos, Excludes my Job)</text>
 {rows_svg}</svg>
 """
     return svg
