@@ -4941,7 +4941,7 @@
       "etag": null,
       "is_private": false,
       "weeks": {},
-      "last_fetched": "2026-06-16T07:54:54.790208+00:00"
+      "last_fetched": "2026-06-17T07:47:17.931874+00:00"
     },
     "ctf05/CSSE_375_Project": {
       "etag": "W/\"896c0f52deeaf50c6ac6c9297ce68aed1d792cc71c8967878ac0ab6cb31de1c0\"",
@@ -5465,7 +5465,7 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-06-16T07:54:58.103092+00:00"
+      "last_fetched": "2026-06-17T07:47:21.544774+00:00"
     },
     "ctf05/ComfyUI-KJNodes": {
       "etag": "W/\"9fd67ec8b51599441b85509558bef1be18c6ced08f9a6bf692547b3335d4fcf4\"",
@@ -10275,7 +10275,7 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-06-16T07:55:06.431695+00:00"
+      "last_fetched": "2026-06-17T07:47:30.781810+00:00"
     },
     "ctf05/Interferometer-Submit": {
       "etag": "W/\"14326ba86a73703812e0384c09d4d17b835dd9546809b3272ebcd9a41afc2b66\"",
@@ -15804,7 +15804,7 @@
       "etag": null,
       "is_private": false,
       "weeks": {},
-      "last_fetched": "2026-06-16T07:55:12.437308+00:00"
+      "last_fetched": "2026-06-17T07:47:37.428236+00:00"
     },
     "ctf05/ResumeRushGodot": {
       "etag": "W/\"13ead921f8c764cca2cda8cde68bcc1fcf8a7a67a70ae9f995729f7647c45422\"",
@@ -17421,13 +17421,13 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-06-16T07:55:15.161389+00:00"
+      "last_fetched": "2026-06-17T07:47:40.360545+00:00"
     },
     "ctf05/RunpodMochi": {
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-06-16T07:55:16.007266+00:00"
+      "last_fetched": "2026-06-17T07:47:41.144809+00:00"
     },
     "ctf05/RunpodMotionForge": {
       "etag": "W/\"726ba5036d83508c91d9b9ff97098360e2209f8b2ee956de7d80473768d44b53\"",
@@ -18131,7 +18131,7 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-06-16T07:55:17.604536+00:00"
+      "last_fetched": "2026-06-17T07:47:42.758718+00:00"
     },
     "ctf05/RunpodRiffusion": {
       "etag": "W/\"65465ac4074431bef17f31b499abd9478802e13fe84356556b7c9576e0f6d630\"",
@@ -20075,7 +20075,7 @@
       "last_fetched": "2026-06-13T07:18:35.446116+00:00"
     },
     "ctf05/ctf05": {
-      "etag": "W/\"4a175d595614e5a0b9ca3d19bb81e21da839752883e504316ccbc87d53178028\"",
+      "etag": "W/\"a6091cecc22ea110867178547cd590c2bd20145fa196b34ab3705070c523a126\"",
       "is_private": false,
       "weeks": {
         "1735430400": {
@@ -20387,7 +20387,7 @@
           "d": 0
         }
       },
-      "last_fetched": "2026-06-16T07:55:38.967082+00:00"
+      "last_fetched": "2026-06-17T07:48:05.290476+00:00"
     },
     "ctf05/desktop-tutorial": {
       "etag": "W/\"4733bd89c9eef8b2fb1692afdd5d3c0d6db4ec5e642493d14b61469f779cfba6\"",
@@ -21397,7 +21397,7 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-06-16T07:55:22.860950+00:00"
+      "last_fetched": "2026-06-17T07:47:48.602397+00:00"
     },
     "ctf05/flux1-schnell-huggingface_4f4d0f6de51a4b0e80e5f39c893b0580": {
       "etag": "W/\"98d185dbb80dd3553f12985875209e703906cf8083bc5bd6e4f7c6792738c4cf\"",
@@ -21710,13 +21710,13 @@
       "etag": null,
       "is_private": false,
       "weeks": {},
-      "last_fetched": "2026-06-16T07:55:26.369516+00:00"
+      "last_fetched": "2026-06-17T07:47:52.710431+00:00"
     },
     "ctf05/schnell_302034b509934450aa6fcff93a3fbdb6": {
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-06-16T07:55:27.047186+00:00"
+      "last_fetched": "2026-06-17T07:47:53.494756+00:00"
     },
     "ctf05/was-node-suite-comfyui": {
       "etag": "W/\"c8c10d2fc021ae56c583b23cf61f078433f2727d5e5a9502b89867a826830e02\"",
@@ -22371,5 +22371,5 @@
       "last_fetched": "2026-06-13T07:18:19.548694+00:00"
     }
   },
-  "last_updated": "2026-06-16T07:55:38.972100+00:00"
+  "last_updated": "2026-06-17T07:48:05.295302+00:00"
 }
