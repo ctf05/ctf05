@@ -5081,7 +5081,7 @@
       "etag": null,
       "is_private": false,
       "weeks": {},
-      "last_fetched": "2026-07-08T06:48:49.964407+00:00"
+      "last_fetched": "2026-07-09T07:10:15.330466+00:00"
     },
     "ctf05/CSSE_375_Project": {
       "etag": "W/\"f926ed41dc00a16636c6e1bc8a0e334641f4b97345ad9cf33c4977ed8249bb16\"",
@@ -5637,7 +5637,7 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-07-08T06:48:54.559313+00:00"
+      "last_fetched": "2026-07-09T07:10:18.543327+00:00"
     },
     "ctf05/ComfyUI-KJNodes": {
       "etag": "W/\"56a3293a9e9fc1ba5445c9e7a896b1a8dce6c881cb92edca3177556d620a5254\"",
@@ -10639,7 +10639,7 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-07-08T06:49:05.331564+00:00"
+      "last_fetched": "2026-07-09T07:10:27.169477+00:00"
     },
     "ctf05/Interferometer-Submit": {
       "etag": "W/\"806ebf54f29d29a0dd563b80380c94ed42fa9b00ff350e9ecd575acd3d4b653e\"",
@@ -16376,7 +16376,7 @@
       "etag": null,
       "is_private": false,
       "weeks": {},
-      "last_fetched": "2026-07-08T06:49:13.478903+00:00"
+      "last_fetched": "2026-07-09T07:10:33.024682+00:00"
     },
     "ctf05/ResumeRushGodot": {
       "etag": "W/\"7806425d1766903e7d105eac10abff5d207c6f93ad33d9d3adb151a56bac585e\"",
@@ -18073,13 +18073,13 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-07-08T06:49:17.013788+00:00"
+      "last_fetched": "2026-07-09T07:10:35.795707+00:00"
     },
     "ctf05/RunpodMochi": {
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-07-08T06:49:18.142268+00:00"
+      "last_fetched": "2026-07-09T07:10:36.515434+00:00"
     },
     "ctf05/RunpodMotionForge": {
       "etag": "W/\"37892f044bed25be0604c8f23eaa439024f660630d63e1542bc3463649196bed\"",
@@ -18815,7 +18815,7 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-07-08T06:49:20.317845+00:00"
+      "last_fetched": "2026-07-09T07:10:37.927329+00:00"
     },
     "ctf05/RunpodRiffusion": {
       "etag": "W/\"ed2a4030ef9e36b64533758026070694d647f238f3d0a2047de29931904853cf\"",
@@ -20839,7 +20839,7 @@
       "last_fetched": "2026-07-06T07:31:35.497396+00:00"
     },
     "ctf05/ctf05": {
-      "etag": "W/\"e745ba7ce5618b2d247c5498a5c2ad0178fed3acb897a5530dc84edc204d84af\"",
+      "etag": "W/\"a987cb6b8b62d257ebf10b7b9fdd89bec009440a7e69dcec7ce0a49f32a0458b\"",
       "is_private": false,
       "weeks": {
         "1735430400": {
@@ -21163,7 +21163,7 @@
           "d": 0
         }
       },
-      "last_fetched": "2026-07-08T06:49:45.843372+00:00"
+      "last_fetched": "2026-07-09T07:10:59.069535+00:00"
     },
     "ctf05/desktop-tutorial": {
       "etag": "W/\"bd666ee8282f582f452196fa17d7117d0fc1a16bea7a550b1b13359eb5c3117b\"",
@@ -22205,7 +22205,7 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-07-08T06:49:28.291311+00:00"
+      "last_fetched": "2026-07-09T07:10:43.310664+00:00"
     },
     "ctf05/flux1-schnell-huggingface_4f4d0f6de51a4b0e80e5f39c893b0580": {
       "etag": "W/\"6b9ff4ad9fc01e5eedcb157dcd118bec969429aef7fb604c8cf87e86deca5fec\"",
@@ -22534,13 +22534,13 @@
       "etag": null,
       "is_private": false,
       "weeks": {},
-      "last_fetched": "2026-07-08T06:49:32.763474+00:00"
+      "last_fetched": "2026-07-09T07:10:46.954230+00:00"
     },
     "ctf05/schnell_302034b509934450aa6fcff93a3fbdb6": {
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-07-08T06:49:33.860504+00:00"
+      "last_fetched": "2026-07-09T07:10:47.611542+00:00"
     },
     "ctf05/was-node-suite-comfyui": {
       "etag": "W/\"689b4ea8e1f9c09728248172c7e8c6e1a95d6182d204788935c7b9756b6c38a3\"",
@@ -23301,8 +23301,8 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-07-08T06:49:23.519483+00:00"
+      "last_fetched": "2026-07-09T07:10:40.130423+00:00"
     }
   },
-  "last_updated": "2026-07-08T06:49:46.268385+00:00"
+  "last_updated": "2026-07-09T07:10:59.074409+00:00"
 }
