@@ -4,15 +4,15 @@
   <text x="58" y="33" fill="#fabd2f" font-size="18" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif" font-weight="600">Lines of Code Edited</text>
   <text x="58" y="53" fill="#a89984" font-size="16" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif" font-weight="400">(Personal Repos, Excludes my Job)</text>
   <text x="25" y="80" fill="#8ec07c" font-size="14" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif" font-weight="400">All Time</text>
-  <text x="200" y="80" fill="#ebdbb2" font-size="14" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif" font-weight="700">21,639,621 lines</text>
-  <text x="200" y="100" font-size="12" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif"><tspan fill="#b8bb26">+16,895,914</tspan>  <tspan fill="#a89984">/</tspan>  <tspan fill="#fb4934">-4,743,707</tspan></text>
+  <text x="200" y="80" fill="#ebdbb2" font-size="14" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif" font-weight="700">22,684,058 lines</text>
+  <text x="200" y="100" font-size="12" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif"><tspan fill="#b8bb26">+17,822,334</tspan>  <tspan fill="#a89984">/</tspan>  <tspan fill="#fb4934">-4,861,724</tspan></text>
   <text x="25" y="130" fill="#8ec07c" font-size="14" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif" font-weight="400">Last Year</text>
-  <text x="200" y="130" fill="#ebdbb2" font-size="14" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif" font-weight="700">13,096,292 lines</text>
-  <text x="200" y="150" font-size="12" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif"><tspan fill="#b8bb26">+12,490,348</tspan>  <tspan fill="#a89984">/</tspan>  <tspan fill="#fb4934">-605,944</tspan></text>
+  <text x="200" y="130" fill="#ebdbb2" font-size="14" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif" font-weight="700">14,140,729 lines</text>
+  <text x="200" y="150" font-size="12" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif"><tspan fill="#b8bb26">+13,416,768</tspan>  <tspan fill="#a89984">/</tspan>  <tspan fill="#fb4934">-723,961</tspan></text>
   <text x="25" y="180" fill="#8ec07c" font-size="14" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif" font-weight="400">Last Month</text>
-  <text x="200" y="180" fill="#ebdbb2" font-size="14" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif" font-weight="700">10,836,446 lines</text>
-  <text x="200" y="200" font-size="12" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif"><tspan fill="#b8bb26">+10,758,200</tspan>  <tspan fill="#a89984">/</tspan>  <tspan fill="#fb4934">-78,246</tspan></text>
+  <text x="200" y="180" fill="#ebdbb2" font-size="14" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif" font-weight="700">11,880,883 lines</text>
+  <text x="200" y="200" font-size="12" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif"><tspan fill="#b8bb26">+11,684,620</tspan>  <tspan fill="#a89984">/</tspan>  <tspan fill="#fb4934">-196,263</tspan></text>
   <text x="25" y="230" fill="#8ec07c" font-size="14" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif" font-weight="400">Last Week</text>
-  <text x="200" y="230" fill="#ebdbb2" font-size="14" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif" font-weight="700">2 lines</text>
-  <text x="200" y="250" font-size="12" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif"><tspan fill="#b8bb26">+1</tspan>  <tspan fill="#a89984">/</tspan>  <tspan fill="#fb4934">-1</tspan></text>
+  <text x="200" y="230" fill="#ebdbb2" font-size="14" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif" font-weight="700">1,044,439 lines</text>
+  <text x="200" y="250" font-size="12" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif"><tspan fill="#b8bb26">+926,421</tspan>  <tspan fill="#a89984">/</tspan>  <tspan fill="#fb4934">-118,018</tspan></text>
 </svg>
