@@ -5597,7 +5597,7 @@
       "etag": null,
       "is_private": false,
       "weeks": {},
-      "last_fetched": "2026-11-16T14:27:32.834986+00:00"
+      "last_fetched": "2026-11-17T15:18:36.277527+00:00"
     },
     "ctf05/CSSE_375_Project": {
       "etag": "W/\"03f90c061de003a70588368360443f3f87b8909ac9c1bb6ab0f5fada6a082865\"",
@@ -6305,7 +6305,7 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-16T14:27:38.659884+00:00"
+      "last_fetched": "2026-11-17T15:18:40.072692+00:00"
     },
     "ctf05/ComfyUI-KJNodes": {
       "etag": "W/\"3605d39211834713eb11a0edeeeb2510699cb89b2efe73cf83d7646a5a5093a6\"",
@@ -8489,10 +8489,10 @@
       "last_fetched": "2026-11-15T13:16:12.161688+00:00"
     },
     "ctf05/ComfyUI-basic_data_handling": {
-      "etag": "W/\"36b9850623e09c12986c12385f0de8d91da07f582a34e6a9df4d2c104c0fd9cd\"",
+      "etag": "W/\"8dd45fa04040805f4480857e20b010d9fcb0effaf192b0e2af058a1098c01941\"",
       "is_private": false,
       "weeks": {},
-      "last_fetched": "2026-11-09T14:51:56.348727+00:00"
+      "last_fetched": "2026-11-17T15:19:28.470338+00:00"
     },
     "ctf05/DNSCAT2-Docker": {
       "etag": "W/\"18e36c2439c73d614ca69f622fe91662a60164db7ec64dbd25dc32bd0e025c47\"",
@@ -12219,7 +12219,7 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-16T14:27:47.433542+00:00"
+      "last_fetched": "2026-11-17T15:18:49.305701+00:00"
     },
     "ctf05/Interferometer-Submit": {
       "etag": "W/\"f0e28715c8c4391f3a12a3c06a8c367098be85cb3427ed258a79593c3993ba18\"",
@@ -17421,7 +17421,7 @@
       "etag": null,
       "is_private": false,
       "weeks": {},
-      "last_fetched": "2026-11-16T14:27:53.131012+00:00"
+      "last_fetched": "2026-11-17T15:18:55.092918+00:00"
     },
     "ctf05/Petalbyte": {
       "etag": "W/\"eb3c7b1e828d799411c563651f2eb6380fdd9f21fc8b4f270c649bacf654fd96\"",
@@ -18944,7 +18944,7 @@
       "etag": null,
       "is_private": false,
       "weeks": {},
-      "last_fetched": "2026-11-16T14:27:55.062827+00:00"
+      "last_fetched": "2026-11-17T15:18:56.961446+00:00"
     },
     "ctf05/ResumeRushGodot": {
       "etag": "W/\"400c5ca7bf12bcfe859d2e8bcc006f1c4ca34780a240229ffa3dabed77a2e8e0\"",
@@ -21021,13 +21021,13 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-16T14:27:58.092326+00:00"
+      "last_fetched": "2026-11-17T15:19:00.004414+00:00"
     },
     "ctf05/RunpodMochi": {
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-16T14:27:59.031844+00:00"
+      "last_fetched": "2026-11-17T15:19:00.920045+00:00"
     },
     "ctf05/RunpodMotionForge": {
       "etag": "W/\"9429a213fc43eb18df08750af87f4b1f0ab5ab979307231cea2405e1b1ce8bd7\"",
@@ -21915,7 +21915,7 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-16T14:28:00.708291+00:00"
+      "last_fetched": "2026-11-17T15:19:02.707528+00:00"
     },
     "ctf05/RunpodRiffusion": {
       "etag": "W/\"762509715247d95fe5b9d453315e6743c14f230654ec15d5f4d62ce60510bbb3\"",
@@ -22650,7 +22650,7 @@
       "last_fetched": "2026-11-15T13:16:24.927651+00:00"
     },
     "ctf05/SageAttention": {
-      "etag": "W/\"d473f62add07710796151cbc78e51da1e5fdfca4f523fe56732a14ed71ba2b31\"",
+      "etag": "W/\"4794f738ee52eac59d40ceceef8fd68c49a4aac6e01ff12d25644a57dd2bbf1a\"",
       "is_private": false,
       "weeks": {
         "1727568000": {
@@ -23096,9 +23096,13 @@
         "1794096000": {
           "a": 0,
           "d": 0
+        },
+        "1794700800": {
+          "a": 0,
+          "d": 0
         }
       },
-      "last_fetched": "2026-11-09T14:51:56.901115+00:00"
+      "last_fetched": "2026-11-17T15:19:28.849635+00:00"
     },
     "ctf05/SlitherAI": {
       "etag": "W/\"bf76d5a1c20b327ea5dfe644bce688e11d9e898a12838911da93996921b9f451\"",
@@ -24303,10 +24307,10 @@
       "last_fetched": "2026-11-15T13:16:25.454426+00:00"
     },
     "ctf05/audio-separation-nodes-comfyui": {
-      "etag": "W/\"240666f556ea9a8984916b2ec15449c413b0b85dffadd79d2c15cdd59d46113b\"",
+      "etag": "W/\"81615ce4550c7d9da9b2d98fbb7d5ce23db16bb30101b2fb3d3d991a96931b2e\"",
       "is_private": false,
       "weeks": {},
-      "last_fetched": "2026-11-10T14:04:08.161002+00:00"
+      "last_fetched": "2026-11-17T15:19:29.216624+00:00"
     },
     "ctf05/comfyui_segment_anything": {
       "etag": "W/\"5186eb13a21ecaed2e81bc00bab8f1970cee876e5d5d1fb2836246e489c7122a\"",
@@ -24315,7 +24319,7 @@
       "last_fetched": "2026-11-15T13:16:25.728341+00:00"
     },
     "ctf05/ctf05": {
-      "etag": "W/\"400626fd14cab05b924a965b200cb7f7153c2bca91ab69950dcdd9a295ac7df6\"",
+      "etag": "W/\"659383304f5c99ab7382abb948c850db2317012e8ad1e5987d235878d23a81a0\"",
       "is_private": false,
       "weeks": {
         "1735430400": {
@@ -24715,7 +24719,7 @@
           "d": 0
         }
       },
-      "last_fetched": "2026-11-16T14:28:29.560865+00:00"
+      "last_fetched": "2026-11-17T15:19:29.595849+00:00"
     },
     "ctf05/desktop-tutorial": {
       "etag": "W/\"68d6721b9d690d26cd4f6152840e56dd6520e5e18030c202677f37aae658826f\"",
@@ -25905,13 +25909,13 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-16T14:28:09.987975+00:00"
+      "last_fetched": "2026-11-17T15:19:30.429622+00:00"
     },
     "ctf05/flux1-schnell-huggingface_4f4d0f6de51a4b0e80e5f39c893b0580": {
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-16T14:28:10.798182+00:00"
+      "last_fetched": "2026-11-17T15:19:31.255984+00:00"
     },
     "ctf05/github-readme-stats": {
       "etag": "W/\"cfc9c56e42c088eb8811ca5ce4110de2fc6d109ca0596f646d66801fa4ed1ef4\"",
@@ -25920,7 +25924,7 @@
       "last_fetched": "2026-11-12T14:26:17.611459+00:00"
     },
     "ctf05/interferometerAI": {
-      "etag": "W/\"858b604e828f0d21cb079a8a3e72c9afff6db4e981b2a67bd00f3a49982989fe\"",
+      "etag": "W/\"42220037edde0ce4035f330e27aca37a6799a5d6de99c8a093f739141d691a13\"",
       "is_private": false,
       "weeks": {
         "1739664000": {
@@ -26286,42 +26290,46 @@
         "1794096000": {
           "a": 0,
           "d": 0
+        },
+        "1794700800": {
+          "a": 0,
+          "d": 0
         }
       },
-      "last_fetched": "2026-11-10T14:04:10.581383+00:00"
+      "last_fetched": "2026-11-17T15:19:31.646928+00:00"
     },
     "ctf05/lnreader": {
-      "etag": "W/\"66cfa1defdb912e1339bc5f7b58dad50fb20ea274a7c738fd58835d90c73b316\"",
+      "etag": "W/\"1f536788d3fe2bc9c7d01278256d73d6e96a01b04c0420fc4c5e7529ae3a15ae\"",
       "is_private": false,
       "weeks": {},
-      "last_fetched": "2026-11-10T14:04:11.074054+00:00"
+      "last_fetched": "2026-11-17T15:19:32.099166+00:00"
     },
     "ctf05/neovim-config": {
-      "etag": "W/\"9406d113dbd400e93a568d834004307495ea38637a7847f73d7d853f4b174df3\"",
+      "etag": "W/\"e6870c99cbda14f9f3e13bd7eafe2acd93543cce6ff41c604bb50bda69c6096f\"",
       "is_private": false,
       "weeks": {},
-      "last_fetched": "2026-11-10T14:04:11.470981+00:00"
+      "last_fetched": "2026-11-17T15:19:32.548841+00:00"
     },
     "ctf05/panta-rhei": {
       "etag": null,
       "is_private": false,
       "weeks": {},
-      "last_fetched": "2026-11-16T14:28:15.165830+00:00"
+      "last_fetched": "2026-11-17T15:19:33.756348+00:00"
     },
     "ctf05/schnell_302034b509934450aa6fcff93a3fbdb6": {
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-16T14:28:16.014942+00:00"
+      "last_fetched": "2026-11-17T15:19:34.740144+00:00"
     },
     "ctf05/was-node-suite-comfyui": {
-      "etag": "W/\"acaf9eb386b82651b2e8c6f8784a11488e26c79a40c39dc0f32147f29c4aa8bf\"",
+      "etag": "W/\"f90d55883c051ac2f2da2381ef9d4dca858baf01e1c9fa6106f9ce38d1bf336b\"",
       "is_private": false,
       "weeks": {},
-      "last_fetched": "2026-11-10T14:04:13.738851+00:00"
+      "last_fetched": "2026-11-17T15:19:35.281300+00:00"
     },
     "hueyee/CSSE415-Pokemon-Predictor": {
-      "etag": "W/\"50e7c73a0a8ba049694b67c0c8abfbd7939ddbf41941fa9fbac425f120238250\"",
+      "etag": "W/\"d45fb367323737803dc31c233448031885b4890db4b7b206f2a12bc31a8272f8\"",
       "is_private": false,
       "weeks": {
         "1745712000": {
@@ -26647,12 +26655,16 @@
         "1794096000": {
           "a": 0,
           "d": 0
+        },
+        "1794700800": {
+          "a": 0,
+          "d": 0
         }
       },
-      "last_fetched": "2026-11-10T14:04:14.045516+00:00"
+      "last_fetched": "2026-11-17T15:19:35.606038+00:00"
     },
     "rhit-spiottdj/CSSE_375_Project": {
-      "etag": "W/\"f600efd53cc88351dd0fafa5fe650550806f308be9aaa6c95c8430f9231b42c6\"",
+      "etag": "W/\"f91fdee056545d02aba22c42d9418be9adfb9635cbe4e911d2242ac61148d4a6\"",
       "is_private": false,
       "weeks": {
         "1741478400": {
@@ -27006,9 +27018,13 @@
         "1794096000": {
           "a": 0,
           "d": 0
+        },
+        "1794700800": {
+          "a": 0,
+          "d": 0
         }
       },
-      "last_fetched": "2026-11-10T14:04:14.428675+00:00"
+      "last_fetched": "2026-11-17T15:19:35.965820+00:00"
     },
     "ctf05/E2EChat": {
       "etag": "W/\"ede857b9c28a08a6fbe1d5f8d5bfe9b2ecdc9ab9e2539614a1fe9261bc8bd610\"",
@@ -27277,7 +27293,7 @@
       "last_fetched": "2026-11-15T13:16:04.881236+00:00"
     },
     "ctf05/offerfactory": {
-      "etag": "W/\"a678c9813526f6f6f5aa2ddc99a0d3afe77af27536f8126a3685a821f71fef92\"",
+      "etag": "W/\"43eac2fd4c2223335894a77276bdc9193046688851678b9492081ba630e2e4d4\"",
       "is_private": true,
       "weeks": {
         "1778371200": {
@@ -27387,9 +27403,13 @@
         "1794096000": {
           "a": 0,
           "d": 0
+        },
+        "1794700800": {
+          "a": 0,
+          "d": 0
         }
       },
-      "last_fetched": "2026-11-10T14:04:11.908265+00:00"
+      "last_fetched": "2026-11-17T15:19:32.899281+00:00"
     },
     "ctf05/DevBox": {
       "etag": "W/\"517a3541d842ad3d0b2958ca44bc1d155674fef89d09b5a36a69481f4bd63511\"",
@@ -27597,7 +27617,7 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-16T14:28:04.361736+00:00"
+      "last_fetched": "2026-11-17T15:19:05.887991+00:00"
     },
     "ctf05/moving": {
       "etag": "W/\"59142af094264af8a1f5fe36bb5eb8be7cd89d053de1efe47e6d849da68858ab\"",
@@ -27662,7 +27682,7 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-16T14:27:27.205038+00:00"
+      "last_fetched": "2026-11-17T15:18:30.740975+00:00"
     },
     "LOME-AI/HushBox-staging": {
       "etag": "W/\"edcdbda370ef0e6482fe6a4065bbed3db7463a250306c46e2379f49db8555524\"",
@@ -27707,19 +27727,19 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-16T14:27:51.147848+00:00"
+      "last_fetched": "2026-11-17T15:18:53.114298+00:00"
     },
     "ctf05/Wedding-Venue": {
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-16T14:28:05.719701+00:00"
+      "last_fetched": "2026-11-17T15:19:07.189593+00:00"
     },
     "LOME-AI/HushBox-Provision": {
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-16T14:27:24.674029+00:00"
+      "last_fetched": "2026-11-17T15:18:28.178489+00:00"
     },
     "LOME-AI/HushBox-Staging": {
       "etag": null,
@@ -27728,7 +27748,7 @@
       "last_fetched": "2026-09-27T11:08:20.524617+00:00"
     },
     "LOME-AI/HushBox-old": {
-      "etag": "W/\"46da744456957f6eac98e0f13ada7be1d4ccff64cb77684d282cb6c9de862324\"",
+      "etag": "W/\"d1c505aeddccc9df20a15ff0f44f87173a6f3bfb95b6a6d53042c949f66ffd6d\"",
       "is_private": true,
       "weeks": {
         "1765670400": {
@@ -27922,15 +27942,19 @@
         "1794096000": {
           "a": 0,
           "d": 0
+        },
+        "1794700800": {
+          "a": 0,
+          "d": 0
         }
       },
-      "last_fetched": "2026-11-10T14:04:06.838577+00:00"
+      "last_fetched": "2026-11-17T15:19:27.869768+00:00"
     },
     "LOME-AI/hushbox-ios-certificates": {
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-16T14:27:28.766363+00:00"
+      "last_fetched": "2026-11-17T15:18:32.257937+00:00"
     },
     "LOME-AI/HushBox-Backup": {
       "etag": "W/\"2488ffce46a2bd7107eba714c83e841baebf24d048722b0c1295ab43b66ed118\"",
@@ -28006,10 +28030,10 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-16T14:28:05.066230+00:00"
+      "last_fetched": "2026-11-17T15:19:06.548497+00:00"
     },
     "LOME-AI/HushBox-context": {
-      "etag": "W/\"aafe5715bef01040d3c82456fb0a6de6d0f855110aa74065d31bbfee6c6ff0aa\"",
+      "etag": "W/\"3aa096ccba11390402e6fd3073c3882e4d0fe3b2afcc0abd21799e5f3b1d8704\"",
       "is_private": true,
       "weeks": {
         "1792886400": {
@@ -28023,10 +28047,14 @@
         "1794096000": {
           "a": 0,
           "d": 0
+        },
+        "1794700800": {
+          "a": 0,
+          "d": 0
         }
       },
-      "last_fetched": "2026-11-10T14:04:06.538264+00:00"
+      "last_fetched": "2026-11-17T15:19:27.429577+00:00"
     }
   },
-  "last_updated": "2026-11-16T14:28:29.564646+00:00"
+  "last_updated": "2026-11-17T15:19:35.972379+00:00"
 }
