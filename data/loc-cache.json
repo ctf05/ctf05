@@ -5633,7 +5633,7 @@
       "etag": null,
       "is_private": false,
       "weeks": {},
-      "last_fetched": "2026-11-22T13:52:55.119257+00:00"
+      "last_fetched": "2026-11-23T17:00:18.297963+00:00"
     },
     "ctf05/CSSE_375_Project": {
       "etag": "W/\"3ad78a9e86fe8d21de72c4e5f667718db0cba371e9934058fa6044b67fc2bc5d\"",
@@ -6349,7 +6349,7 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-22T13:52:57.322456+00:00"
+      "last_fetched": "2026-11-23T17:00:23.673887+00:00"
     },
     "ctf05/ComfyUI-KJNodes": {
       "etag": "W/\"a917fbca3cc1a9fa9c9403d9161f0e66cb7bd04ee9240774b7df48bb8bbddf45\"",
@@ -12311,7 +12311,7 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-22T13:53:01.839943+00:00"
+      "last_fetched": "2026-11-23T17:00:36.632601+00:00"
     },
     "ctf05/Interferometer-Submit": {
       "etag": "W/\"76c458fb7c7f1146ad0c3c57e8df968112a0e4d863a0cd052cb5eb3bc53dd994\"",
@@ -17553,7 +17553,7 @@
       "etag": null,
       "is_private": false,
       "weeks": {},
-      "last_fetched": "2026-11-22T13:53:04.950135+00:00"
+      "last_fetched": "2026-11-23T17:00:44.571506+00:00"
     },
     "ctf05/Petalbyte": {
       "etag": "W/\"75a9832fd06126f04cbcbfd22e84d67c4fdbb77dca15c5f77e93cfd15b6c9115\"",
@@ -19088,7 +19088,7 @@
       "etag": null,
       "is_private": false,
       "weeks": {},
-      "last_fetched": "2026-11-22T13:53:06.091800+00:00"
+      "last_fetched": "2026-11-23T17:00:47.088112+00:00"
     },
     "ctf05/ResumeRushGodot": {
       "etag": "W/\"27084f16df6085b276b57b98ebf5298e64527d4b241e7a6cef2f433634ab4d8e\"",
@@ -21185,13 +21185,13 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-22T13:53:07.790673+00:00"
+      "last_fetched": "2026-11-23T17:00:51.200108+00:00"
     },
     "ctf05/RunpodMochi": {
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-22T13:53:08.297804+00:00"
+      "last_fetched": "2026-11-23T17:00:52.380159+00:00"
     },
     "ctf05/RunpodMotionForge": {
       "etag": "W/\"08989f3c229751068f5c3f98a0894baa0bd35c3e87ffa6be9a30cbcd92e8ee19\"",
@@ -22087,7 +22087,7 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-22T13:53:09.377031+00:00"
+      "last_fetched": "2026-11-23T17:00:54.568202+00:00"
     },
     "ctf05/RunpodRiffusion": {
       "etag": "W/\"074f9674e30bcc494e71d2daa3c7a70a7966c79a95cb6864a54d276144fe6b58\"",
@@ -24507,7 +24507,7 @@
       "last_fetched": "2026-11-22T13:53:11.168101+00:00"
     },
     "ctf05/ctf05": {
-      "etag": "W/\"35d7cfc9fca8591f38dfa42051467a3c95d790ea3ffd0dea96e4b71cc8524516\"",
+      "etag": "W/\"298732b46704815a5ec9d67e40bee80407d87958d64fdcfa1dd4776cbd2d43fd\"",
       "is_private": false,
       "weeks": {
         "1735430400": {
@@ -24911,7 +24911,7 @@
           "d": 0
         }
       },
-      "last_fetched": "2026-11-22T13:53:11.415426+00:00"
+      "last_fetched": "2026-11-23T17:01:25.883109+00:00"
     },
     "ctf05/desktop-tutorial": {
       "etag": "W/\"2c5c031ac69b78f7d2f590eb480f119ff176c231ed7ba53ff5733b773bcb8f79\"",
@@ -26109,13 +26109,13 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-22T13:52:37.819853+00:00"
+      "last_fetched": "2026-11-23T17:01:05.478983+00:00"
     },
     "ctf05/flux1-schnell-huggingface_4f4d0f6de51a4b0e80e5f39c893b0580": {
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-22T13:52:38.394584+00:00"
+      "last_fetched": "2026-11-23T17:01:06.587017+00:00"
     },
     "ctf05/github-readme-stats": {
       "etag": "W/\"257b11c406d7eafa93ae2ee9bb3b46561c1792477a2ba4e8da6a1037dc0d4597\"",
@@ -26514,13 +26514,13 @@
       "etag": null,
       "is_private": false,
       "weeks": {},
-      "last_fetched": "2026-11-22T13:52:40.973190+00:00"
+      "last_fetched": "2026-11-23T17:01:11.720300+00:00"
     },
     "ctf05/schnell_302034b509934450aa6fcff93a3fbdb6": {
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-22T13:52:41.519277+00:00"
+      "last_fetched": "2026-11-23T17:01:12.914613+00:00"
     },
     "ctf05/was-node-suite-comfyui": {
       "etag": "W/\"f90d55883c051ac2f2da2381ef9d4dca858baf01e1c9fa6106f9ce38d1bf336b\"",
@@ -27620,7 +27620,7 @@
       "last_fetched": "2026-11-17T15:19:32.899281+00:00"
     },
     "ctf05/DevBox": {
-      "etag": "W/\"517a3541d842ad3d0b2958ca44bc1d155674fef89d09b5a36a69481f4bd63511\"",
+      "etag": "W/\"936b16d3040dc5aed6283478f928d69ae4ae3bde2d876b8cffa32ecced688f89\"",
       "is_private": false,
       "weeks": {
         "1778976000": {
@@ -27730,9 +27730,13 @@
         "1794700800": {
           "a": 18,
           "d": 2
+        },
+        "1795305600": {
+          "a": 0,
+          "d": 0
         }
       },
-      "last_fetched": "2026-11-16T14:28:29.168131+00:00"
+      "last_fetched": "2026-11-23T17:01:25.403753+00:00"
     },
     "LOME-AI/Social-Media-Automation": {
       "etag": "W/\"8127f9c1eefff8e914cd84f8e4f0f541be0f9f89630501bbc084763c33358abf\"",
@@ -27829,7 +27833,7 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-22T13:52:33.960458+00:00"
+      "last_fetched": "2026-11-23T17:00:58.093992+00:00"
     },
     "ctf05/moving": {
       "etag": "W/\"c80fa4fc25b860b2f6ef1f1173da2beca784a3ca9951766496a4a286e8659b46\"",
@@ -27898,7 +27902,7 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-22T13:52:07.175866+00:00"
+      "last_fetched": "2026-11-23T17:00:10.170086+00:00"
     },
     "LOME-AI/HushBox-staging": {
       "etag": "W/\"0d94578e0232049ba6062577bf72201c2d75ba9254834d08e850d4b6466f3f75\"",
@@ -27943,19 +27947,19 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-22T13:52:25.059196+00:00"
+      "last_fetched": "2026-11-23T17:00:41.975649+00:00"
     },
     "ctf05/Wedding-Venue": {
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-22T13:52:34.755829+00:00"
+      "last_fetched": "2026-11-23T17:00:59.861226+00:00"
     },
     "LOME-AI/HushBox-Provision": {
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-22T13:52:05.393695+00:00"
+      "last_fetched": "2026-11-23T17:00:06.518996+00:00"
     },
     "LOME-AI/HushBox-Staging": {
       "etag": null,
@@ -28170,7 +28174,7 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-22T13:52:08.369798+00:00"
+      "last_fetched": "2026-11-23T17:00:12.402120+00:00"
     },
     "LOME-AI/HushBox-Backup": {
       "etag": "W/\"fd10f3d18955dd15d67252b8fa739a105a04c82c0037b6920a59360763f80173\"",
@@ -28254,7 +28258,7 @@
       "etag": null,
       "is_private": true,
       "weeks": {},
-      "last_fetched": "2026-11-22T13:52:34.382218+00:00"
+      "last_fetched": "2026-11-23T17:00:59.006647+00:00"
     },
     "LOME-AI/HushBox-context": {
       "etag": "W/\"b7e43e8b7d36c34446669774e93998679c6ec152f72c091b3b3e7c35078f687f\"",
@@ -28280,5 +28284,5 @@
       "last_fetched": "2026-11-19T15:00:51.675470+00:00"
     }
   },
-  "last_updated": "2026-11-22T13:53:12.130046+00:00"
+  "last_updated": "2026-11-23T17:01:25.889891+00:00"
 }
